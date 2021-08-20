@@ -26,6 +26,7 @@ p {
 
 .header {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   padding: 21px 0 22px;
@@ -87,6 +88,57 @@ p {
 }
 
 .header__btn:hover {
+  color: #FCB72B;
+  background-color: #fff;
+  border: 3px solid #FCB72B;
+}
+
+.intro {
+  background-image: url(../img/intro-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 96px;
+}
+
+.intro__container {
+  padding: 153px 0 152px;
+}
+
+.intro__box {
+  width: 500px;
+}
+
+.intro__title {
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.intro__text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  margin-left: 95px;
+  margin-bottom: 40px;
+}
+
+.intro__btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 11px 36px;
+  color: #fff;
+  background: #FCB72B;
+  border: 3px solid transparent;
+  margin-left: 95px;
+}
+
+.intro__btn:hover {
   color: #FCB72B;
   background-color: #fff;
   border: 3px solid #FCB72B;
