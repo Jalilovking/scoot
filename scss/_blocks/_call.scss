@@ -1,5 +1,15 @@
 .call {
     background: #495567;
+    &__wrapper {
+        position: relative;
+        width: 1440px;
+        max-width: 100%;
+        margin: 0 auto,;
+        background-image: url(../img/three-circle.svg);
+        background-repeat: no-repeat;
+        background-size: 1000px, 347px;
+        background-position: 450px 140px;
+    }
     &__container {
         display: flex;
         justify-content: space-between;
@@ -28,6 +38,9 @@
 }
 @media screen and (max-width: 840px) {
     .call {
+        &__wrapper {
+            background-position-x: -165px;
+        }
         &__container {
             flex-direction: column;
             padding-top: 62px;
@@ -55,6 +68,9 @@
     }
 }
 @media screen and (max-width: 548px) {
+    .call__wrapper {
+        background-position-x: right;
+    }
     .call__container {
         padding: 62px 32px;
     }
