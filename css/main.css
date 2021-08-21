@@ -17,6 +17,11 @@ p {
   font-weight: 400;
 }
 
+a {
+  -webkit-transition: .4s ease all;
+  transition: .4s ease all;
+}
+
 .container {
   width: 1130px;
   max-width: 100%;
@@ -218,6 +223,7 @@ p {
 }
 
 .intro__text {
+  position: relative;
   font-size: 15px;
   line-height: 25px;
   color: #fff;
@@ -227,14 +233,28 @@ p {
 
 .intro__text::before {
   content: "";
-  width: 100%;
-  height: 100%;
   position: absolute;
-  top: 70%;
-  left: -15%;
-  background-image: url(../img/line.svg);
+  width: 300px;
+  height: 15px;
+  background-color: #FCB72B;
+  left: -29px;
+  top: 43%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.intro__text::after {
+  content: "";
+  position: absolute;
+  width: 444px;
+  height: 138px;
+  background-image: url("../img/direction-small.svg");
   background-repeat: no-repeat;
-  display: block;
+  background-size: cover;
+  right: -20px;
+  top: 43%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .intro__btn {
@@ -258,8 +278,10 @@ p {
 
 @media screen and (max-width: 768px) {
   .intro {
-    background-size: cover;
-    background-position-x: -644px;
+    background-image: url(../img/direction-small.svg), url(../img/intro-bg.png);
+    background-size: 447px, cover;
+    background-position-x: -127px, -644px;
+    background-position-y: 473px, 0px;
   }
   .intro__container {
     padding: 137px 98px 217px 97px;
@@ -276,12 +298,43 @@ p {
     margin-bottom: 32px;
     margin-left: 0;
   }
+  .intro__text::before {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 15px;
+    background-color: #FCB72B;
+    left: -29px;
+    top: 43%;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .intro__text::after {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 444px;
+    height: 138px;
+    background-image: url("../img/direction-small.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: -20px;
+    top: 43%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
   .intro__btn {
     margin-left: 0;
   }
 }
 
 @media screen and (max-width: 577px) {
+  .intro {
+    background-size: 447px, 1440px;
+    background-position-y: 478px, 0;
+    background-position-x: -312px, -1005px;
+  }
   .intro__container {
     padding: 115px 32px 179px 32px;
   }
