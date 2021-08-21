@@ -22,10 +22,13 @@
     &__label {
         display: none;
     }
+    &__exit {
+        display: none;
+    }
     &__img {
         margin-left: 5px;
     }
-    &__box {
+    &__modal {
         width: 940px;
         max-width: 100%;
         display: flex;
@@ -102,7 +105,7 @@
         &__box {
             position: fixed;
             display: none;
-            top: 128px;
+            top: 64px;
             right: 0;
             left: 0;
             bottom: 0;
@@ -111,6 +114,9 @@
 
         }
         &__modal {
+            display: inline-block;
+            width: 256px;
+            max-width: 100%;
             padding: 64px 32px 24px 32px;
             flex-direction: column;
             background: #333A44;
