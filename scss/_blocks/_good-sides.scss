@@ -114,14 +114,16 @@
     }
 }
 @media screen and (max-width: 402px) {
-    margin-bottom: 120px;
-    .good-sides__container {
-        padding: 0 32px;
-    }
-    .good-sides__title {
-        margin-top: 56px;
-    }
-    .good-sides__text {
-        margin: 32px 0;
+    .good-sides {
+        margin-bottom: 120px;
+        &__container {
+            padding: 0 32px;
+        }
+        &__title {
+            margin-top: 56px;
+        }
+        &__text {
+            margin: 32px 0;
+        }
     }
 }

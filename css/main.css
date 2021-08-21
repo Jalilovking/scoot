@@ -620,7 +620,9 @@ p {
 }
 
 @media screen and (max-width: 402px) {
-  margin-bottom: 120px;
+  .good-sides {
+    margin-bottom: 120px;
+  }
   .good-sides__container {
     padding: 0 32px;
   }
