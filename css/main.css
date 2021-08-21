@@ -17,6 +17,17 @@ p {
   font-weight: 400;
 }
 
+.svg {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .container {
   width: 1130px;
   max-width: 100%;
@@ -714,6 +725,129 @@ p {
     font-size: 32px;
     line-height: 32px;
     letter-spacing: -1.42857px;
+  }
+}
+
+.footer {
+  background: #333A44;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px 10px 32px;
+}
+
+.footer__logo {
+  margin-left: 3px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-left: 59px;
+}
+
+.footer__item {
+  margin-right: 32px;
+}
+
+.footer__item:last-child {
+  margin-right: 0;
+}
+
+.footer__link {
+  display: inline-block;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+.footer__link:hover {
+  color: #FCB72B;
+}
+
+.footer__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.footer__img {
+  margin-right: 24px;
+}
+
+.footer__img:last-child {
+  margin-right: 0;
+}
+
+.footer__img--link {
+  fill: #FCB72B;
+}
+
+.footer__img--link:hover {
+  fill: #E5ECF4;
+}
+
+@media screen and (max-width: 600px) {
+  .footer__list {
+    margin-left: 20px;
+  }
+  .footer__item {
+    margin-right: 16px;
+  }
+  .footer__item:last-child {
+    margin-right: 0;
+  }
+  .footer__img {
+    margin-right: 10px;
+  }
+  .footer__img:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 64px 127px 88px 128px;
+  }
+  .footer__logo {
+    margin: 0 auto;
+  }
+  .footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin: 41px 0 85px;
+  }
+  .footer__item {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .footer__item:last-child {
+    margin-bottom: 0;
+  }
+  .footer__media {
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
