@@ -91,20 +91,28 @@
             display: block;
             margin-left: 32px;
         }
+        &__exit {
+            margin-left: 32px;
+            display: none;
+        }
         &__img {
             margin-left: auto;
             margin-right: auto;
         }
         &__box {
+            position: fixed;
             display: none;
-            padding: 64px 0 24px 32px0;
-            position: absolute;
-            flex-direction: column;
-            top: 64px;
+            top: 128px;
             right: 0;
             left: 0;
             bottom: 0;
-            // background-color: rgba(0, 0, 0, 0.75 );
+            background-color: rgba(0, 0, 0, 0.75);
+            z-index: 2;
+
+        }
+        &__modal {
+            padding: 64px 32px 24px 32px;
+            flex-direction: column;
             background: #333A44;
         }
         &__list {
@@ -117,8 +125,20 @@
                 margin-bottom: 0;
             }
         }
+        &__link {
+            color: #E5ECF4;
+        }
+        &__btn {
+            margin: 0 auto;
+        }
         &__checkbox:checked ~ &__box {
             display: flex;
+        }
+        &__checkbox:checked ~ &__label {
+            display: none;
+        }
+        &__checkbox:checked ~ &__exit {
+            display: block;
         }
         
     }
