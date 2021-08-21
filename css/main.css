@@ -30,6 +30,8 @@ p {
   left: 0;
   right: 0;
   padding: 21px 0 22px;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .header__nav {
@@ -119,7 +121,6 @@ p {
   border: 3px solid #FCB72B;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   .header {
     padding: 21px 30px 22px 29px;
@@ -177,8 +178,10 @@ p {
     display: -ms-flexbox;
     display: flex;
   }
-=======
+}
+
 .intro {
+  position: relative;
   background-image: url(../img/intro-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -186,11 +189,23 @@ p {
 }
 
 .intro__container {
-  padding: 153px 0 152px;
+  padding: 153px 10px 152px;
 }
 
 .intro__box {
   width: 500px;
+}
+
+.intro__line {
+  position: absolute;
+  top: 355px;
+  left: 38px;
+}
+
+.intro__img {
+  position: absolute;
+  top: 355px;
+  left: 740px;
 }
 
 .intro__title {
@@ -210,6 +225,18 @@ p {
   margin-bottom: 40px;
 }
 
+.intro__text::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 70%;
+  left: -15%;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  display: block;
+}
+
 .intro__btn {
   display: inline-block;
   text-decoration: none;
@@ -227,6 +254,39 @@ p {
   color: #FCB72B;
   background-color: #fff;
   border: 3px solid #FCB72B;
->>>>>>> intro
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    background-size: cover;
+    background-position-x: -644px;
+  }
+  .intro__container {
+    padding: 137px 98px 217px 97px;
+  }
+  .intro__box {
+    width: 573px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .intro__title {
+    margin-bottom: 24px;
+  }
+  .intro__text {
+    margin-bottom: 32px;
+    margin-left: 0;
+  }
+  .intro__btn {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .intro__container {
+    padding: 115px 32px 179px 32px;
+  }
+  .intro__text {
+    margin-bottom: 34px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

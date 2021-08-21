@@ -1,13 +1,26 @@
 .intro {
+    position: relative;
     background-image: url(../img/intro-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 96px;
     &__container {
-        padding: 153px 0 152px;
+        padding: 153px 10px 152px;
+        // position: relative;
     }
     &__box {
         width: 500px;
+        // max-width: 100%;
+    }
+    &__line {
+        position: absolute;
+        top: 355px;
+        left: 38px;
+    }
+    &__img {
+        position: absolute;
+        top: 355px;
+        left: 740px;
     }
     &__title {
         font-size: 56px;
@@ -23,6 +36,17 @@
         color:#fff;
         margin-left: 95px;
         margin-bottom: 40px;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 70%;
+            left: -15%;
+            background-image: url(../img/line.svg);
+            background-repeat: no-repeat;
+            display: block;
+          }
     }
     &__btn {
         display: inline-block;
@@ -39,6 +63,40 @@
             color:#FCB72B;
             background-color: #fff;
             border: 3px solid #FCB72B;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .intro {
+        background-size: cover;
+        background-position-x: -644px;
+        &__container {
+            padding: 137px 98px 217px 97px;
+        }
+        &__box {
+            width: 573px;
+            max-width: 100%;
+            text-align: center;
+        }
+        &__title {
+            margin-bottom: 24px;
+        }
+        &__text {
+            margin-bottom: 32px;
+            margin-left: 0;
+        }
+        &__btn {
+            margin-left: 0;
+        }
+    }
+}
+@media screen and (max-width: 577px) {
+    .intro {
+        &__container {
+            padding: 115px 32px 179px 32px;
+        }
+        &__text {
+            margin-bottom: 34px;
         }
     }
 }
