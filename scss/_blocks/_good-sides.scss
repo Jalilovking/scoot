@@ -5,18 +5,92 @@
         flex-wrap: wrap;
     }
     &__item {
+        position: relative;
         width: 1110px;
         max-width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 155px;
+        &:nth-child(1) {
+            &::before {
+                position: absolute;
+                right: -165px;
+                bottom: 10px;
+                content: "";
+                width: 735px;
+                height: 146px;
+                background-image: url("../img/direction-to-left.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 2;
+            }
+            &::after {
+                position: absolute;
+                right: -509px;
+                content: "";
+                width: 445px;
+                height: 445px;
+                background-image: url("../img/circle.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 1;
+            }
+        }
         &:nth-child(2) {
             margin-bottom: 160px;
             flex-direction: row-reverse;
+            &::before {
+                position: absolute;
+                top: 0;
+                left: -550px;
+                content: "";
+                width: 735px;
+                height: 146px;
+                background-image: url("../img/direction-to-right.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 2;
+            }
+            &::after {
+                position: absolute;
+                top:0;
+                left: -509px;
+                content: "";
+                width: 445px;
+                height: 445px;
+                background-image: url("../img/circle.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 1;
+            }
         }
         &:last-child {
             margin-bottom: 0;
+            &::before {
+                position: absolute;
+                top: 85px;
+                right: -545px;
+                content: "";
+                width: 735px;
+                height: 146px;
+                background-image: url("../img/direction-to-left.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 2;
+            }
+            &::after {
+                position: absolute;
+                top:0;
+                right: -509px;
+                content: "";
+                width: 445px;
+                height: 445px;
+                background-image: url("../img/circle.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 1;
+            }
         }
     }
     &__info {
@@ -62,12 +136,38 @@
         &__item {
             flex-direction: column-reverse;
             margin-bottom: 128px;
+            &:nth-child(1){
+                &::before {
+                    top: 307px;
+                    left: -47px;
+                }
+                &::after {
+                    top: 0;
+                    right: -448px;
+                }
+            }
             &:nth-child(2) {
                 flex-direction: column-reverse;
                 margin-bottom: 120px;
+                &::before {
+                    top: 0px;
+                    left: -483px;
+                }
+                &::after {
+                    top: 0;
+                    left: -448px;
+                }
             }
             &:last-child {
                 margin-bottom: 0;
+                &::before {
+                    top: 85px;
+                    left: 322px;
+                }
+                &::after {
+                    top: 0;
+                    right: -448px;
+                }
             }
         }
         &__info {
@@ -92,6 +192,36 @@
 }
 @media screen and (max-width:548px) {
     .good-sides {
+        &__item {
+            &:nth-child(1){
+                &::before {
+                    top: 173px;
+                    left: 1px;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+            &:nth-child(2) {
+                &::before {
+                    top: 0px;
+                    right: 81px;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+            &:nth-child(3){
+                &::before {
+                    top: 7px;
+                    left: 130px;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        
         &__title {
             margin: 0;
             margin-top: 64px;
