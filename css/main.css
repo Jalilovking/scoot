@@ -473,4 +473,162 @@ p {
     margin-bottom: 24px;
   }
 }
+
+.good-sides {
+  margin-bottom: 329px;
+}
+
+.good-sides__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.good-sides__item {
+  width: 1110px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 155px;
+}
+
+.good-sides__item:nth-child(2) {
+  margin-bottom: 160px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.good-sides__item:last-child {
+  margin-bottom: 0;
+}
+
+.good-sides__info {
+  width: 445px;
+}
+
+.good-sides__title {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.good-sides__text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin: 24px 0 40px;
+}
+
+.good-sides__btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 11px 41px;
+  color: #fff;
+  background: #FCB72B;
+  border: 3px solid transparent;
+}
+
+.good-sides__btn:hover {
+  color: #FCB72B;
+  background-color: #fff;
+  border: 3px solid #FCB72B;
+}
+
+.good-sides__img {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 840px) {
+  .good-sides {
+    margin-bottom: 104px;
+  }
+  .good-sides__container {
+    padding: 0 98px 0 97px;
+  }
+  .good-sides__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 128px;
+  }
+  .good-sides__item:nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 120px;
+  }
+  .good-sides__item:last-child {
+    margin-bottom: 0;
+  }
+  .good-sides__info {
+    width: 100%;
+    text-align: center;
+  }
+  .good-sides__title {
+    width: 457px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 64px;
+  }
+  .good-sides__text {
+    margin: 40px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .good-sides__container {
+    padding: 0 48px 0 47px;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .good-sides__title {
+    margin: 0;
+    margin-top: 64px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.42857px;
+  }
+  .good-sides__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .good-sides__img {
+    width: 311px;
+    height: 311px;
+  }
+  .good-sides__btn {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 402px) {
+  margin-bottom: 120px;
+  .good-sides__container {
+    padding: 0 32px;
+  }
+  .good-sides__title {
+    margin-top: 56px;
+  }
+  .good-sides__text {
+    margin: 32px 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
