@@ -1,0 +1,66 @@
+.call {
+    background: #495567;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 102px;
+        padding-bottom: 102px;
+    }
+    &__title {
+        width: 415px;
+        max-width: 100%;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+    }
+    &__list {
+        display: flex;
+        list-style-type: none;
+    }
+    &__item {
+        margin-right: 18px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+@media screen and (max-width: 840px) {
+    .call {
+        &__container {
+            flex-direction: column;
+            padding-top: 62px;
+            padding-bottom: 62px;
+        }
+        &__title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        &__item {
+            margin-right: 13px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &__img {
+            height: 40px;
+        }
+    }
+    .appstore {
+        width: 114px;
+    }
+    .googleplay {
+        width: 130px;
+    }
+}
+@media screen and (max-width: 548px) {
+    .call__container {
+        padding: 62px 32px;
+    }
+    .call__title {
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.42857px;
+    }
+}
