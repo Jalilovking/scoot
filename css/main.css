@@ -26,6 +26,17 @@ a {
   transition: .4s ease all;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .container {
   width: 1130px;
   max-width: 100%;
@@ -611,7 +622,8 @@ a {
   content: "";
   width: 445px;
   height: 445px;
-  background-image: url("../img/circle.svg");
+  background: #E5ECF4;
+  border-radius: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -645,7 +657,8 @@ a {
   content: "";
   width: 445px;
   height: 445px;
-  background-image: url("../img/circle.svg");
+  background: #E5ECF4;
+  border-radius: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -675,7 +688,8 @@ a {
   content: "";
   width: 445px;
   height: 445px;
-  background-image: url("../img/circle.svg");
+  background: #E5ECF4;
+  border-radius: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
